@@ -42,7 +42,7 @@ RSpec.describe "NotesApplication" do
             newnote = NotesApplication.new ("Hassan")
 
             it 'should returns notes list to be empty' do
-                expect(newnote.list).to eq []
+                expect(newnote.notes).to eq []
             end
 
     end
