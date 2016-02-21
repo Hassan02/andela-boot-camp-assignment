@@ -17,7 +17,6 @@ module Hassan
         else
           @author = author
           @notes = []
-          puts "Class instantiated with name #{@author}"
         end
         
     end
@@ -45,9 +44,7 @@ module Hassan
     def get(note_id)
         if !note_id.is_a? Integer
             raise "Note Id should be an Integer"
-        elsif @notes[note_id] = nil           
-            puts "Please enter a valid note id"
-        else            
+        else       
         return @notes[note_id]
         end 
     end
